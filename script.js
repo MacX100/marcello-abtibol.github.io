@@ -38,7 +38,7 @@ const revealOnScroll = () => {
 };
 
 window.addEventListener('scroll', revealOnScroll);
-revealOnScroll(); // Dispara ao carregar
+revealOnScroll();
 
 // --- EFEITO 3D TILT NOS CARDS AO MOVER O MOUSE ---
 const tiltCards = document.querySelectorAll('.tilt-card');
