@@ -3,68 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcello Abtibol | Portfólio de Nível Executivo</title>
-    <meta name="description" content="Marcello Abtibol | Ciências Econômicas, Análise de Dados e Finanças Corporativas. Portfólio profissional.">
-    <!-- Folha de Estilos Atualizada -->
+    <title>Marcello Abtibol | Economist & Business Analyst</title>
+    <meta name="description" content="Portfólio profissional de Marcello Abtibol. Estudante de Ciências Econômicas, focado em Mercado Financeiro, Análise de Dados e Liderança.">
+    
+    <!-- CSS & Fontes -->
     <link rel="stylesheet" href="style.css">
-    <!-- Ícones Modernos e Vibrantes do FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Efeito de animação ao carregar (Opcional, mas dá um toque premium) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Container Centralizado com Efeito Glassmorphism -->
-    <main class="container animate__animated animate__fadeIn">
+    <!-- Fundo de Efeito de Partículas / Glow -->
+    <div class="bg-glow"></div>
+
+    <div class="main-wrapper">
         
-        <!-- Foto de Perfil (Suba uma foto com o nome perfil.jpg redonda/recortada) -->
-        <div class="profile-header">
-            <img src="perfil.jpg" alt="Marcello Abtibol" class="profile-img animate__animated animate__zoomIn animate__delay-1s">
-            <h1 class="animate__animated animate__fadeInUp animate__delay-1s">Marcello Abtibol</h1>
-            <p class="subtitle animate__animated animate__fadeInUp animate__delay-1s">
-                <i class="fa-solid fa-chart-line"></i> Ciências Econômicas | <i class="fa-solid fa-database"></i> Análise de Dados
-            </p>
-            <p class="location animate__animated animate__fadeInUp animate__delay-1s">
-                <i class="fa-solid fa-location-dot"></i> Rio de Janeiro, RJ
-            </p>
+        <!-- HEADER / HERO SECTION -->
+        <header class="hero-card">
+            <div class="profile-area">
+                <div class="img-wrapper">
+                    <img src="perfil.jpg" alt="Marcello Abtibol" class="profile-img">
+                    <div class="status-badge" title="Disponível para Oportunidades"></div>
+                </div>
+                
+                <div class="profile-info">
+                    <span class="badge-title">Economia & Mercado Financeiro</span>
+                    <h1>Marcello Abtibol</h1>
+                    <p class="tagline">Análise de Dados | Ciclos de Mercado | Liderança & Relações Internacionais</p>
+                    
+                    <div class="meta-info">
+                        <span><i class="fa-solid fa-location-dot"></i> Barra da Tijuca, Rio de Janeiro - RJ</span>
+                        <span><i class="fa-solid fa-graduation-cap"></i> 5º Período - Cândido Mendes</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOTÕES DE AÇÃO RÁPIDA -->
+            <div class="action-buttons">
+                <a href="https://wa.me/5521991552698" target="_blank" class="btn btn-primary">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="mailto:marcelloabtibol@hotmail.com" class="btn btn-secondary">
+                    <i class="fa-solid fa-envelope"></i> E-mail
+                </a>
+                <a href="curriculo.pdf" target="_blank" class="btn btn-highlight">
+                    <i class="fa-solid fa-file-pdf"></i> Baixar CV (PDF)
+                </a>
+                <a href="https://github.com/MacX100" target="_blank" class="btn btn-icon" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="btn btn-icon" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </header>
+
+        <!-- CARDS DE ESTATÍSTICAS RÁPIDAS -->
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-globe"></i></div>
+                <div class="stat-data">
+                    <h3>4 Idiomas</h3>
+                    <p>Inglês Avançado (MET), Mandarim, Árabe</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="stat-data">
+                    <h3>Análise de Mercado</h3>
+                    <p>Price Action, Ciclos & Lógica de Programação</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-people-group"></i></div>
+                <div class="stat-data">
+                    <h3>Liderança & Eventos</h3>
+                    <p>Coordenação Técnica & Fóruns Internacionais</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTEÚDO PRINCIPAL (EM DUAS COLUNAS) -->
+        <div class="content-grid">
+            
+            <!-- COLUNA DA ESQUERDA: EXPERIÊNCIAS -->
+            <main class="left-column">
+                <section class="glass-section">
+                    <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Experiência & Trajetória</h2>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Coordenador Técnico</h3>
+                                <span class="timeline-org">Confederação Brasileira do Desporto Eletrônico (CBDE)</span>
+                                <span class="timeline-date">2018 — 2020</span>
+                                <p>Gestão técnica, planejamento operacional e estruturação de diretrizes para o ecossistema nacional de eSports.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Palestrante & Docente Externa</h3>
+                                <span class="timeline-org">Universidade Estácio de Sá / OAB-RJ</span>
+                                <span class="timeline-date">2018</span>
+                                <p>Professor no Curso Preparatório para Exame de Agentes FIFA. Palestrante sobre Gestão, Doping e Futuro Comercial do Esporte Eletrônico na OAB/RJ.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Organizador & Mediador de Eventos Globais</h3>
+                                <span class="timeline-org">Fóruns & Seminários Internacionais</span>
+                                <span class="timeline-date">2017 — 2018</span>
+                                <p>Organização do I Fórum Internacional Brasil, Reino Unido e África (2018), I Seminário sobre Futebol Chinês (2017) e Seminário de Responsabilidade Civil no Desporto (ANDD/FERJ).</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Audiencista & Análise Técnica</h3>
+                                <span class="timeline-org">Abtibol & Associados</span>
+                                <p>Atuação como preposto institucional e análise de rotinas operacionais.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="glass-section">
+                    <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Cursos & Especializações Extracurriculares</h2>
+                    
+                    <div class="skills-tags">
+                        <span class="tag"><i class="fa-solid fa-certificate"></i> Análise Técnica de Mercados Financeiros (Diego Velasques / Al Brooks)</span>
+                        <span class="tag"><i class="fa-solid fa-certificate"></i> Ciclos de Mercado (Fernando Ulrich)</span>
+                        <span class="tag"><i class="fa-solid fa-certificate"></i> Viver de Renda (Bruno Perini)</span>
+                        <span class="tag"><i class="fa-solid fa-code"></i> Lógica de Programação (Alura)</span>
+                        <span class="tag"><i class="fa-solid fa-calculator"></i> Gestão Financeira (Udemy)</span>
+                        <span class="tag"><i class="fa-solid fa-bullhorn"></i> Gestão de Tráfego (Peter Jordan)</span>
+                    </div>
+                </section>
+            </main>
+
+            <!-- COLUNA DA DIREITA: IDIOMAS & HABILIDADES -->
+            <aside class="right-column">
+                
+                <!-- IDIOMAS -->
+                <section class="glass-section">
+                    <h2 class="section-title"><i class="fa-solid fa-language"></i> Idiomas</h2>
+                    
+                    <div class="language-box">
+                        <div class="lang-info">
+                            <span>Inglês</span>
+                            <span class="lang-level">Avançado (MET)</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+                    </div>
+
+                    <div class="language-box">
+                        <div class="lang-info">
+                            <span>Mandarim</span>
+                            <span class="lang-level">Intermediário (CCCB)</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 60%;"></div></div>
+                    </div>
+
+                    <div class="language-box">
+                        <div class="lang-info">
+                            <span>Árabe</span>
+                            <span class="lang-level">Básico (Consulado Libanês)</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 35%;"></div></div>
+                    </div>
+
+                    <div class="language-box">
+                        <div class="lang-info">
+                            <span>Português</span>
+                            <span class="lang-level">Nativo</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
+                    </div>
+                </section>
+
+                <!-- SOFT SKILLS -->
+                <section class="glass-section">
+                    <h2 class="section-title"><i class="fa-solid fa-brain"></i> Habilidades & Atitudes</h2>
+                    
+                    <ul class="soft-skills-list">
+                        <li><i class="fa-solid fa-check"></i> Inteligência Emocional</li>
+                        <li><i class="fa-solid fa-check"></i> Comunicação Assertiva</li>
+                        <li><i class="fa-solid fa-check"></i> Liderança e Gestão de Conflitos</li>
+                        <li><i class="fa-solid fa-check"></i> Trabalho em Equipe Dinâmico</li>
+                        <li><i class="fa-solid fa-check"></i> Negociação e Diplomacia</li>
+                        <li><i class="fa-solid fa-check"></i> Adaptabilidade & Aprendizado Contínuo</li>
+                    </ul>
+                </section>
+
+            </aside>
         </div>
 
-        <!-- Seção de Bio Resumida e Impáctante -->
-        <div class="about-section animate__animated animate__fadeInUp animate__delay-2s">
-            <p>
-                Estudante de Ciências Econômicas focado no desenvolvimento de soluções analíticas, inteligência de negócios e automação de fluxos de dados. Experiência comprovada em liderança e coordenação técnica, com foco constante em eficiência operacional e decisões estratégicas baseadas em dados.
-            </p>
-        </div>
-
-        <!-- Links Interativos / Botões com Efeitos Premium -->
-        <div class="links-container animate__animated animate__fadeInUp animate__delay-3s">
-            <a href="https://www.linkedin.com/in/marcelloabtibol" target="_blank" class="link-card linkedin-card">
-                <i class="fa-brands fa-linkedin-in"></i>
-                <span>Conectar no LinkedIn</span>
-            </a>
-
-            <a href="https://github.com/MacX100" target="_blank" class="link-card github-card">
-                <i class="fa-brands fa-github"></i>
-                <span>Explorar Projetos no GitHub</span>
-            </a>
-
-            <!-- Suba o seu currículo em PDF com o nome curriculo.pdf -->
-            <a href="curriculo.pdf" target="_blank" class="link-card cv-card highlight-card">
-                <i class="fa-solid fa-file-pdf"></i>
-                <span>Baixar Currículo Profissional (PDF)</span>
-            </a>
-
-            <a href="mailto:marcello.abtibol.analyst@gmail.com" class="link-card email-card">
-                <i class="fa-solid fa-envelope"></i>
-                <span>Enviar E-mail Direto</span>
-            </a>
-        </div>
-
-        <!-- Rodapé Minimalista -->
-        <footer class="animate__animated animate__fadeIn animate__delay-4s">
-            <p>© 2026 Marcello Abtibol | Todos os direitos reservados.</p>
+        <footer>
+            <p>© 2026 Marcello Abtibol. Desenvolvido para apresentar resultados e alta performance.</p>
         </footer>
-    </main>
+
+    </div>
 
 </body>
 </html>
