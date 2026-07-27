@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcello Abtibol | Economist & Business Analyst</title>
-    <meta name="description" content="Portfólio profissional de Marcello Abtibol. Estudante de Ciências Econômicas, focado em Mercado Financeiro, Análise de Dados e Liderança.">
+    <meta name="description" content="Portfólio profissional de Marcello Abtibol. Ciências Econômicas, Análise de Dados e Mercado Financeiro.">
     
     <!-- CSS & Fontes -->
     <link rel="stylesheet" href="style.css">
@@ -13,13 +13,23 @@
 </head>
 <body>
 
-    <!-- Fundo de Efeito de Partículas / Glow -->
+    <!-- Fundo Iluminado / Partículas -->
     <div class="bg-glow"></div>
+
+    <!-- CONTROLES FIXOS NO TOPO (TEMA E IDIOMA) -->
+    <nav class="top-controls">
+        <button id="theme-toggle" class="control-btn" title="Alternar Tema">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+        <button id="lang-toggle" class="control-btn" title="Switch Language">
+            <i class="fa-solid fa-globe"></i> <span id="lang-label">EN</span>
+        </button>
+    </nav>
 
     <div class="main-wrapper">
         
-        <!-- HEADER / HERO SECTION -->
-        <header class="hero-card">
+        <!-- HERO CARD (CABEÇALHO) -->
+        <header class="hero-card tilt-card">
             <div class="profile-area">
                 <div class="img-wrapper">
                     <img src="perfil.jpg" alt="Marcello Abtibol" class="profile-img">
@@ -27,18 +37,18 @@
                 </div>
                 
                 <div class="profile-info">
-                    <span class="badge-title">Economia & Mercado Financeiro</span>
+                    <span class="badge-title" data-pt="Economia & Mercado Financeiro" data-en="Economics & Financial Markets">Economia & Mercado Financeiro</span>
                     <h1>Marcello Abtibol</h1>
-                    <p class="tagline">Análise de Dados | Ciclos de Mercado | Liderança & Relações Internacionais</p>
+                    <p class="tagline" data-pt="Análise de Dados | Ciclos de Mercado | Liderança & Relações Internacionais" data-en="Data Analysis | Market Cycles | Leadership & International Relations">Análise de Dados | Ciclos de Mercado | Liderança & Relações Internacionais</p>
                     
                     <div class="meta-info">
-                        <span><i class="fa-solid fa-location-dot"></i> Barra da Tijuca, Rio de Janeiro - RJ</span>
-                        <span><i class="fa-solid fa-graduation-cap"></i> 5º Período - Cândido Mendes</span>
+                        <span><i class="fa-solid fa-location-dot"></i> <span data-pt="Barra da Tijuca, Rio de Janeiro - RJ" data-en="Barra da Tijuca, Rio de Janeiro - Brazil">Barra da Tijuca, Rio de Janeiro - RJ</span></span>
+                        <span><i class="fa-solid fa-graduation-cap"></i> <span data-pt="5º Período - Cândido Mendes" data-en="5th Term - Cândido Mendes University">5º Período - Cândido Mendes</span></span>
                     </div>
                 </div>
             </div>
 
-            <!-- BOTÕES DE AÇÃO RÁPIDA -->
+            <!-- BOTÕES DE AÇÃO -->
             <div class="action-buttons">
                 <a href="https://wa.me/5521991552698" target="_blank" class="btn btn-primary">
                     <i class="fa-brands fa-whatsapp"></i> WhatsApp
@@ -46,11 +56,11 @@
                 <a href="mailto:marcelloabtibol@hotmail.com" class="btn btn-secondary">
                     <i class="fa-solid fa-envelope"></i> E-mail
                 </a>
+                <a href="curriculo.pdf" target="_blank" class="btn btn-highlight">
+                    <i class="fa-solid fa-file-pdf"></i> CV (PT-BR)
+                </a>
                 <a href="English%20Resume.pdf" target="_blank" class="btn btn-highlight-en">
                     <i class="fa-solid fa-file-pdf"></i> Resume (EN)
-                </a>
-                <a href="curriculo.pdf" target="_blank" class="btn btn-highlight">
-                    <i class="fa-solid fa-file-pdf"></i> Baixar CV (PDF)
                 </a>
                 <a href="https://github.com/MacX100" target="_blank" class="btn btn-icon" title="GitHub">
                     <i class="fa-brands fa-github"></i>
@@ -61,108 +71,104 @@
             </div>
         </header>
 
-        <!-- CARDS DE ESTATÍSTICAS RÁPIDAS -->
+        <!-- ESTATÍSTICAS -->
         <section class="stats-grid">
-            <div class="stat-card">
+            <div class="stat-card tilt-card">
                 <div class="stat-icon"><i class="fa-solid fa-globe"></i></div>
                 <div class="stat-data">
-                    <h3>4 Idiomas</h3>
-                    <p>Inglês Avançado (MET), Mandarim, Árabe</p>
+                    <h3 data-pt="4 Idiomas" data-en="4 Languages">4 Idiomas</h3>
+                    <p data-pt="Inglês Avançado (MET), Mandarim, Árabe" data-en="Advanced English (MET), Mandarin, Arabic">Inglês Avançado (MET), Mandarim, Árabe</p>
                 </div>
             </div>
 
-            <div class="stat-card">
+            <div class="stat-card tilt-card">
                 <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
                 <div class="stat-data">
-                    <h3>Análise de Mercado</h3>
-                    <p>Price Action, Ciclos & Lógica de Programação</p>
+                    <h3 data-pt="Análise de Mercado" data-en="Market Analysis">Análise de Mercado</h3>
+                    <p data-pt="Price Action, Ciclos & Lógica de Programação" data-en="Price Action, Cycles & Programming Logic">Price Action, Ciclos & Lógica de Programação</p>
                 </div>
             </div>
 
-            <div class="stat-card">
+            <div class="stat-card tilt-card">
                 <div class="stat-icon"><i class="fa-solid fa-people-group"></i></div>
                 <div class="stat-data">
-                    <h3>Liderança & Eventos</h3>
-                    <p>Coordenação Técnica & Fóruns Internacionais</p>
+                    <h3 data-pt="Liderança & Eventos" data-en="Leadership & Events">Liderança & Eventos</h3>
+                    <p data-pt="Coordenação Técnica & Fóruns Internacionais" data-en="Technical Coordination & Global Forums">Coordenação Técnica & Fóruns Internacionais</p>
                 </div>
             </div>
         </section>
 
-        <!-- CONTEÚDO PRINCIPAL (EM DUAS COLUNAS) -->
+        <!-- CONTEÚDO PRINCIPAL -->
         <div class="content-grid">
             
-            <!-- COLUNA DA ESQUERDA: EXPERIÊNCIAS -->
             <main class="left-column">
-                <section class="glass-section">
-                    <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Experiência & Trajetória</h2>
+                <section class="glass-section reveal">
+                    <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> <span data-pt="Experiência & Trajetória" data-en="Experience & Career History">Experiência & Trajetória</span></h2>
                     
                     <div class="timeline">
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
-                                <h3>Coordenador Técnico</h3>
-                                <span class="timeline-org">Confederação Brasileira do Desporto Eletrônico (CBDE)</span>
+                                <h3 data-pt="Coordenador Técnico" data-en="Technical Coordinator">Coordenador Técnico</h3>
+                                <span class="timeline-org" data-pt="Confederação Brasileira do Desporto Eletrônico (CBDE)" data-en="Brazilian Confederation of Esports (CBDE)">Confederação Brasileira do Desporto Eletrônico (CBDE)</span>
                                 <span class="timeline-date">2018 — 2020</span>
-                                <p>Gestão técnica, planejamento operacional e estruturação de diretrizes para o ecossistema nacional de eSports.</p>
+                                <p data-pt="Gestão técnica, planejamento operacional e estruturação de diretrizes para o ecossistema nacional de eSports." data-en="Technical management, operational planning, and framework structuring for the national eSports ecosystem.">Gestão técnica, planejamento operacional e estruturação de diretrizes para o ecossistema nacional de eSports.</p>
                             </div>
                         </div>
 
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
-                                <h3>Palestrante & Docente Externa</h3>
-                                <span class="timeline-org">Universidade Estácio de Sá / OAB-RJ</span>
+                                <h3 data-pt="Palestrante & Docente Externa" data-en="Speaker & External Lecturer">Palestrante & Docente Externa</h3>
+                                <span class="timeline-org" data-pt="Universidade Estácio de Sá / OAB-RJ" data-en="Estácio de Sá University / OAB-RJ">Universidade Estácio de Sá / OAB-RJ</span>
                                 <span class="timeline-date">2018</span>
-                                <p>Professor no Curso Preparatório para Exame de Agentes FIFA. Palestrante sobre Gestão, Doping e Futuro Comercial do Esporte Eletrônico na OAB/RJ.</p>
+                                <p data-pt="Professor no Curso Preparatório para Exame de Agentes FIFA. Palestrante sobre Gestão, Doping e Futuro Comercial do Esporte Eletrônico na OAB/RJ." data-en="Lecturer for the FIFA Agents Examination Prep Course. Speaker on Management, Doping, and Commercial Future of Esports at OAB/RJ.">Professor no Curso Preparatório para Exame de Agentes FIFA. Palestrante sobre Gestão, Doping e Futuro Comercial do Esporte Eletrônico na OAB/RJ.</p>
                             </div>
                         </div>
 
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
-                                <h3>Organizador & Mediador de Eventos Globais</h3>
-                                <span class="timeline-org">Fóruns & Seminários Internacionais</span>
+                                <h3 data-pt="Organizador & Mediador de Eventos Globais" data-en="Organizer & Moderator for Global Events">Organizador & Mediador de Eventos Globais</h3>
+                                <span class="timeline-org" data-pt="Fóruns & Seminários Internacionais" data-en="International Forums & Seminars">Fóruns & Seminários Internacionais</span>
                                 <span class="timeline-date">2017 — 2018</span>
-                                <p>Organização do I Fórum Internacional Brasil, Reino Unido e África (2018), I Seminário sobre Futebol Chinês (2017) e Seminário de Responsabilidade Civil no Desporto (ANDD/FERJ).</p>
+                                <p data-pt="Organização do I Fórum Internacional Brasil, Reino Unido e África (2018), I Seminário sobre Futebol Chinês (2017) e Seminário de Responsabilidade Civil no Desporto (ANDD/FERJ)." data-en="Organized the 1st Brazil, UK & Africa International Forum (2018), 1st Chinese Football Seminar (2017), and Sports Civil Liability Seminar (ANDD/FERJ).">Organização do I Fórum Internacional Brasil, Reino Unido e África (2018), I Seminário sobre Futebol Chinês (2017) e Seminário de Responsabilidade Civil no Desporto (ANDD/FERJ).</p>
                             </div>
                         </div>
 
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
-                                <h3>Audiencista & Análise Técnica</h3>
+                                <h3 data-pt="Audiencista & Análise Técnica" data-en="Hearing Representative & Technical Analysis">Audiencista & Análise Técnica</h3>
                                 <span class="timeline-org">Abtibol & Associados</span>
-                                <p>Atuação como preposto institucional e análise de rotinas operacionais.</p>
+                                <p data-pt="Atuação como preposto institucional e análise de rotinas operacionais." data-en="Acted as institutional representative and analyzed operational procedures.">Atuação como preposto institucional e análise de rotinas operacionais.</p>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <section class="glass-section">
-                    <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Cursos & Especializações Extracurriculares</h2>
+                <section class="glass-section reveal">
+                    <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> <span data-pt="Cursos & Especializações" data-en="Courses & Certifications">Cursos & Especializações</span></h2>
                     
                     <div class="skills-tags">
-                        <span class="tag"><i class="fa-solid fa-certificate"></i> Análise Técnica de Mercados Financeiros (Diego Velasques / Al Brooks)</span>
-                        <span class="tag"><i class="fa-solid fa-certificate"></i> Ciclos de Mercado (Fernando Ulrich)</span>
-                        <span class="tag"><i class="fa-solid fa-certificate"></i> Viver de Renda (Bruno Perini)</span>
-                        <span class="tag"><i class="fa-solid fa-code"></i> Lógica de Programação (Alura)</span>
-                        <span class="tag"><i class="fa-solid fa-calculator"></i> Gestão Financeira (Udemy)</span>
-                        <span class="tag"><i class="fa-solid fa-bullhorn"></i> Gestão de Tráfego (Peter Jordan)</span>
+                        <span class="tag"><i class="fa-solid fa-certificate"></i> Technical Analysis of Financial Markets (Diego Velasques / Al Brooks)</span>
+                        <span class="tag"><i class="fa-solid fa-certificate"></i> Market Cycles (Fernando Ulrich)</span>
+                        <span class="tag"><i class="fa-solid fa-certificate"></i> Wealth & Finance (Bruno Perini)</span>
+                        <span class="tag"><i class="fa-solid fa-code"></i> Programming Logic (Alura)</span>
+                        <span class="tag"><i class="fa-solid fa-calculator"></i> Financial Management (Udemy)</span>
+                        <span class="tag"><i class="fa-solid fa-bullhorn"></i> Traffic Management (Peter Jordan)</span>
                     </div>
                 </section>
             </main>
 
-            <!-- COLUNA DA DIREITA: IDIOMAS & HABILIDADES -->
             <aside class="right-column">
-                
-                <!-- IDIOMAS -->
-                <section class="glass-section">
-                    <h2 class="section-title"><i class="fa-solid fa-language"></i> Idiomas</h2>
+                <section class="glass-section reveal">
+                    <h2 class="section-title"><i class="fa-solid fa-language"></i> <span data-pt="Idiomas" data-en="Languages">Idiomas</span></h2>
                     
                     <div class="language-box">
                         <div class="lang-info">
-                            <span>Inglês</span>
-                            <span class="lang-level">Avançado (MET)</span>
+                            <span data-pt="Inglês" data-en="English">Inglês</span>
+                            <span class="lang-level" data-pt="Avançado (MET)" data-en="Advanced (MET)">Avançado (MET)</span>
                         </div>
                         <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
                     </div>
@@ -170,50 +176,50 @@
                     <div class="language-box">
                         <div class="lang-info">
                             <span>Mandarim</span>
-                            <span class="lang-level">Intermediário (CCCB)</span>
+                            <span class="lang-level" data-pt="Intermediário (CCCB)" data-en="Intermediate (CCCB)">Intermediário (CCCB)</span>
                         </div>
                         <div class="progress-bar"><div class="progress-fill" style="width: 60%;"></div></div>
                     </div>
 
                     <div class="language-box">
                         <div class="lang-info">
-                            <span>Árabe</span>
-                            <span class="lang-level">Básico (Consulado Libanês)</span>
+                            <span data-pt="Árabe" data-en="Arabic">Árabe</span>
+                            <span class="lang-level" data-pt="Básico (Consulado Libanês)" data-en="Basic (Lebanese Consulate)">Básico (Consulado Libanês)</span>
                         </div>
                         <div class="progress-bar"><div class="progress-fill" style="width: 35%;"></div></div>
                     </div>
 
                     <div class="language-box">
                         <div class="lang-info">
-                            <span>Português</span>
-                            <span class="lang-level">Nativo</span>
+                            <span data-pt="Português" data-en="Portuguese">Português</span>
+                            <span class="lang-level" data-pt="Nativo" data-en="Native">Nativo</span>
                         </div>
                         <div class="progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
                     </div>
                 </section>
 
-                <!-- SOFT SKILLS -->
-                <section class="glass-section">
-                    <h2 class="section-title"><i class="fa-solid fa-brain"></i> Habilidades & Atitudes</h2>
+                <section class="glass-section reveal">
+                    <h2 class="section-title"><i class="fa-solid fa-brain"></i> <span data-pt="Habilidades & Atitudes" data-en="Soft Skills & Attributes">Habilidades & Atitudes</span></h2>
                     
                     <ul class="soft-skills-list">
-                        <li><i class="fa-solid fa-check"></i> Inteligência Emocional</li>
-                        <li><i class="fa-solid fa-check"></i> Comunicação Assertiva</li>
-                        <li><i class="fa-solid fa-check"></i> Liderança e Gestão de Conflitos</li>
-                        <li><i class="fa-solid fa-check"></i> Trabalho em Equipe Dinâmico</li>
-                        <li><i class="fa-solid fa-check"></i> Negociação e Diplomacia</li>
-                        <li><i class="fa-solid fa-check"></i> Adaptabilidade & Aprendizado Contínuo</li>
+                        <li><i class="fa-solid fa-check"></i> <span data-pt="Inteligência Emocional" data-en="Emotional Intelligence">Inteligência Emocional</span></li>
+                        <li><i class="fa-solid fa-check"></i> <span data-pt="Comunicação Assertiva" data-en="Assertive Communication">Comunicação Assertiva</span></li>
+                        <li><i class="fa-solid fa-check"></i> <span data-pt="Liderança e Gestão de Conflitos" data-en="Leadership & Conflict Resolution">Liderança e Gestão de Conflitos</span></li>
+                        <li><i class="fa-solid fa-check"></i> <span data-pt="Trabalho em Equipe Dinâmico" data-en="Dynamic Teamwork">Trabalho em Equipe Dinâmico</span></li>
+                        <li><i class="fa-solid fa-check"></i> <span data-pt="Negociação e Diplomacia" data-en="Negotiation & Diplomacy">Negociação e Diplomacia</span></li>
+                        <li><i class="fa-solid fa-check"></i> <span data-pt="Adaptabilidade & Aprendizado Contínuo" data-en="Adaptability & Continuous Learning">Adaptabilidade & Aprendizado Contínuo</span></li>
                     </ul>
                 </section>
-
             </aside>
         </div>
 
         <footer>
-            <p>© 2026 Marcello Abtibol. Desenvolvido para apresentar resultados e alta performance.</p>
+            <p>© 2026 Marcello Abtibol. All rights reserved.</p>
         </footer>
-        
+
     </div>
 
+    <!-- Script de Interatividade e Idioma -->
+    <script src="script.js"></script>
 </body>
 </html>
