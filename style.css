@@ -1,84 +1,163 @@
+/* --- Reset Básico e Fontes Modernas --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
+/* --- Corpo da Página: Fundo Dark Elegante e Centralização Perfeita --- */
 body {
-    background-color: #0f172a;
-    color: #f8fafc;
+    background: #0f172a; /* Slate Dark */
+    color: #f1f5f9;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 20px;
+    background-image: 
+        radial-gradient(at 10% 10%, rgba(56, 189, 248, 0.15) 0px, transparent 50%),
+        radial-gradient(at 90% 90%, rgba(2, 132, 199, 0.15) 0px, transparent 50%);
 }
 
+/* --- Container Central: Efeito Glassmorphism (Vidro Fosco) Premium --- */
 .container {
     width: 100%;
-    max-width: 480px;
-    background: #1e293b;
-    padding: 35px 25px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    background: rgba(30, 41, 59, 0.7); /* Slate Dark Translúcido */
+    padding: 40px 30px;
+    border-radius: 24px;
+    backdrop-filter: blur(12px); /* Efeito de Blur de Fundo */
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(148, 163, 184, 0.15); /* Borda Sutil */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 
+/* --- Header de Perfil: Foto, Nome e Subtítulo --- */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(56, 189, 248, 0.8);
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+}
+
 h1 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
+    font-weight: 800;
     color: #ffffff;
+    letter-spacing: -0.5px;
 }
 
 .subtitle {
-    font-size: 0.95rem;
-    color: #38bdf8;
-    margin-top: 6px;
+    font-size: 1rem;
+    color: #38bdf8; /* Sky Blue */
+    margin-top: 8px;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 .location {
-    font-size: 0.85rem;
-    color: #94a3b8;
-    margin-top: 8px;
-}
-
-.about-section {
-    margin: 22px 0 28px;
     font-size: 0.9rem;
-    line-height: 1.5;
-    color: #cbd5e1;
+    color: #94a3b8; /* Slate Light */
+    margin-top: 10px;
+    font-weight: 500;
 }
 
+/* --- Seção de Bio: Texto Fluido e Legível --- */
+.about-section {
+    margin: 30px 0 35px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #cbd5e1;
+    text-align: center;
+}
+
+/* --- Container de Links: Botões Modernos e Vibrantes --- */
 .links-container {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 16px;
 }
 
+/* --- Estilo Base dos Botões (Cards) --- */
 .link-card {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 14px;
-    background-color: #334155;
+    gap: 12px;
+    padding: 16px;
+    background-color: #334155; /* Slate Base */
     color: #ffffff;
     text-decoration: none;
-    border-radius: 12px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border: 1px solid #475569;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    position: relative;
+    overflow: hidden;
 }
 
+/* --- Efeitos de Hover Premium --- */
 .link-card:hover {
-    background-color: #38bdf8;
-    color: #0f172a;
-    transform: translateY(-2px);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
+/* --- Gradientes e Cores Vibrantes para Cada Card --- */
+.linkedin-card {
+    background: linear-gradient(135deg, #0077b5, #005582);
+    border-color: #0077b5;
+}
+
+.github-card {
+    background: linear-gradient(135deg, #333, #111);
+    border-color: #333;
+}
+
+.cv-card {
+    background: linear-gradient(135deg, #0284c7, #075985); /* Sky Blue Dark */
+    border-color: #0284c7;
+}
+
+.email-card {
+    background: linear-gradient(135deg, #e4405f, #a62a42); /* Vermelho E-mail */
+    border-color: #e4405f;
+}
+
+/* --- Destaque sutil para o Card de Currículo --- */
+.highlight-card {
+    border: 2px solid #38bdf8;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+}
+
+/* --- Footer Minimalista --- */
 footer {
-    margin-top: 30px;
-    font-size: 0.75rem;
+    margin-top: 40px;
+    font-size: 0.8rem;
     color: #64748b;
+    font-weight: 500;
+}
+
+/* --- Ajustes Responsivos para Celulares --- */
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 20px;
+    }
+    
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    .link-card {
+        font-size: 0.95rem;
+        padding: 14px;
+    }
 }
